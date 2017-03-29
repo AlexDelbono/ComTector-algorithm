@@ -1,0 +1,74 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Boadilla}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  %\setbeamertemplate{navigation symbols}{} %hide navigation symbols
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\colorlet{beamer@blendedblue}{green!40!black}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{pgf}
+\usepackage{hyperref}
+\usepackage{url}
+
+
+\title[ComTector algorithm]{\textbf{ComTector algorithm}}
+\subtitle{Community Detection in Large-Scale Social Networks}
+\author[Alex Delbono]{Alex Delbono \\ }
+\institute[Politecnico di Milano]{\href{mailto:alex.delbono@mail.polimi.it}{alex.delbono@mail.polimi.it}  
+		\newline \newline \newline 
+		Politecnico di Milano}
+\logo{\pgfputat{\pgfxy(0,7)}{\pgfbox[right,base]{\includegraphics[height=1.8cm]{images/logoPolimi.pdf}}}}
+\date{April 14 2016}
+
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%   DOCUMENT   %%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%   TITLE   %%%%%%%%%%%%
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%% TABLE OF CONTENTS %%%%%
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+
+%%%%%% CONTENT %%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+\input{slides/introduction.tex}
+
+\section{ComTector algorithm}
+\label{sec:comtector_algoritm}
+\input{slides/comtector_algoritm.tex}
+
+\section{Naming mechanism}
+\label{sec:naming_mechanism}
+\input{slides/naming_mechanism.tex}
+
+\section{Experimental results}
+\label{sec:experimental_results}
+\input{slides/experimental_results.tex}
+
+%%%%%% END %%%%%%%%%%%
+\end{document}
